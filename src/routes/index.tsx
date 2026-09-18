@@ -70,7 +70,7 @@ function Portfolio() {
     <section className="editorial-wrap relative py-7 pb-16 md:py-10 md:pb-24">
       <div className="flex items-center justify-between text-[10px] font-bold uppercase tracking-widest"><span>✦ &nbsp; Data Analyst</span><span className="hidden text-primary sm:block">Open to data analytics opportunities →</span></div>
       <h1 className="display-title relative z-0 mt-7 text-[19vw] sm:text-[16vw] lg:text-[12rem]">DATA<br className="sm:hidden"/> ANALYST</h1>
-      <div className="relative z-10 -mt-1 grid items-end gap-7 md:-mt-16 md:grid-cols-[0.9fr_1.15fr] lg:-mt-28">
+      <div className="relative z-10 mt-4 grid items-end gap-7 md:mt-2 md:grid-cols-[0.9fr_1.15fr] lg:mt-6">
         <div className="order-2 max-w-lg pb-3 md:order-1">
           <p className="text-xs font-bold uppercase">Hello, I'm</p>
           <h2 className="mt-2 font-serif text-5xl leading-none sm:text-6xl">Sowmya<br/><span className="text-primary">Paluttla</span></h2>
