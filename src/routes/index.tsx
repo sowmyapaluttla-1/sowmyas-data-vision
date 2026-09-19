@@ -8,10 +8,6 @@ import universityPreview from "../assets/university-powerbi-dashboard.png.asset.
 import churnPreview from "../assets/customer-churn-analysis.png.asset.json";
 
 const RESUME_URL = "https://drive.google.com/file/d/1i7eGaoDjjSVz3V-WGM8V_YVbAslmxy8B/view?usp=sharing";
-import employeePreview from "../assets/employee-dashboard.png.asset.json";
-import salesPreview from "../assets/sales-sql-analysis.png.asset.json";
-import universityPreview from "../assets/university-powerbi-dashboard.png.asset.json";
-import churnPreview from "../assets/customer-churn-analysis.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Portfolio,
