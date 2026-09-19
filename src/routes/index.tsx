@@ -61,7 +61,7 @@ function Portfolio() {
         <a href="#home" className="font-display text-xl font-black">SOWMYA<span className="text-primary">.</span></a>
         <nav aria-label="Primary navigation" className="hidden items-center gap-5 lg:flex">
           {nav.map(([label, id]) => <a key={id} href={`#${id}`} className="text-xs font-semibold uppercase transition-colors hover:text-primary">{label}</a>)}
-          <a href={resume.url} download="Sowmya-Paluttla-Resume.pdf" className="bg-primary px-4 py-2 text-xs font-bold uppercase text-primary-foreground transition-colors hover:bg-foreground">Resume</a>
+          <a href={RESUME_URL} target="_blank" rel="noreferrer" className="bg-primary px-4 py-2 text-xs font-bold uppercase text-primary-foreground transition-colors hover:bg-foreground">Resume</a>
         </nav>
         <button type="button" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen(!open)} className="grid size-10 place-items-center border border-border lg:hidden">{open ? <X size={19}/> : <Menu size={19}/>}</button>
       </div>
