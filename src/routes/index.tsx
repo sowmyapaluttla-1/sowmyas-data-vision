@@ -2,7 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDownToLine, ArrowUpRight, BarChart3, BriefcaseBusiness, Database, Github, GraduationCap, Linkedin, Mail, MapPin, Menu, PieChart, Quote, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import portrait from "../assets/sowmya-paluttla-photo.jpeg.asset.json";
-import resume from "../assets/sowmya-paluttla-resume.pdf.asset.json";
+import employeePreview from "../assets/employee-dashboard.png.asset.json";
+import salesPreview from "../assets/sales-sql-analysis.png.asset.json";
+import universityPreview from "../assets/university-powerbi-dashboard.png.asset.json";
+import churnPreview from "../assets/customer-churn-analysis.png.asset.json";
+
+const RESUME_URL = "https://drive.google.com/file/d/1i7eGaoDjjSVz3V-WGM8V_YVbAslmxy8B/view?usp=sharing";
 import employeePreview from "../assets/employee-dashboard.png.asset.json";
 import salesPreview from "../assets/sales-sql-analysis.png.asset.json";
 import universityPreview from "../assets/university-powerbi-dashboard.png.asset.json";
