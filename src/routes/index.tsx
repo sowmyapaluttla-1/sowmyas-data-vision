@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDownToLine, ArrowUpRight, BarChart3, BriefcaseBusiness, Database, Github, GraduationCap, Linkedin, Mail, MapPin, Menu, PieChart, Quote, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import portrait from "../assets/sowmya-paluttla-photo.jpeg.asset.json";
-import employeePreview from "../assets/employee-dashboard.png.asset.json";
-import salesPreview from "../assets/sales-sql-analysis.png.asset.json";
-import universityPreview from "../assets/university-powerbi-dashboard.png.asset.json";
-import churnPreview from "../assets/customer-churn-analysis.png.asset.json";
+const portraitUrl = "/images/photo.jpeg";
+const employeePreviewUrl = "/images/employee-dashboard.png";
+const salesPreviewUrl = "/images/sales-sql-analysis.png";
+const universityPreviewUrl = "/images/university-powerbi-dashboard.png";
+const churnPreviewUrl = "/images/customer-churn-analysis.png";
 
 const RESUME_URL = "https://drive.google.com/file/d/1i7eGaoDjjSVz3V-WGM8V_YVbAslmxy8B/view?usp=sharing";
 
@@ -36,10 +36,10 @@ const skills = [
 ];
 
 const projects = [
-  { n: "01", title: "Employee Report Excel Dashboard", tech: "Microsoft Excel", desc: "Interactive employee reporting dashboard created using Excel for analyzing workforce performance, departments, task status, projects, working mode, and operational metrics.", url: "https://github.com/sowmyapaluttla-1/employee-report-excel-dashboard", image: employeePreview.url },
-  { n: "02", title: "Sales Data SQL Analysis", tech: "SQL / MySQL", desc: "SQL-based analysis project focused on extracting, analyzing, and generating business insights from sales data.", url: "https://github.com/sowmyapaluttla-1/sales-data-sql-analysis", image: salesPreview.url },
-  { n: "03", title: "University Performance Power BI Dashboard", tech: "Power BI / DAX", desc: "Interactive Power BI dashboard designed to analyze university performance data and present insights through data visualization and business intelligence.", url: "https://github.com/sowmyapaluttla-1/university-performance-powerbi-dashboard", image: universityPreview.url },
-  { n: "04", title: "Customer Churn Python Analysis", tech: "Python / Pandas / NumPy / Matplotlib", desc: "End-to-end customer analytics project involving data cleaning, preprocessing, feature engineering, exploratory analysis, churn analysis, engagement analysis, revenue analysis, and business insights.", url: "https://github.com/sowmyapaluttla-1/customer-churn-python-analysis", image: churnPreview.url },
+  { n: "01", title: "Employee Report Excel Dashboard", tech: "Microsoft Excel", desc: "Interactive employee reporting dashboard created using Excel for analyzing workforce performance, departments, task status, projects, working mode, and operational metrics.", url: "https://github.com/sowmyapaluttla-1/employee-report-excel-dashboard", image: employeePreviewUrl },
+  { n: "02", title: "Sales Data SQL Analysis", tech: "SQL / MySQL", desc: "SQL-based analysis project focused on extracting, analyzing, and generating business insights from sales data.", url: "https://github.com/sowmyapaluttla-1/sales-data-sql-analysis", image: salesPreviewUrl },
+  { n: "03", title: "University Performance Power BI Dashboard", tech: "Power BI / DAX", desc: "Interactive Power BI dashboard designed to analyze university performance data and present insights through data visualization and business intelligence.", url: "https://github.com/sowmyapaluttla-1/university-performance-powerbi-dashboard", image: universityPreviewUrl },
+  { n: "04", title: "Customer Churn Python Analysis", tech: "Python / Pandas / NumPy / Matplotlib", desc: "End-to-end customer analytics project involving data cleaning, preprocessing, feature engineering, exploratory analysis, churn analysis, engagement analysis, revenue analysis, and business insights.", url: "https://github.com/sowmyapaluttla-1/customer-churn-python-analysis", image: churnPreviewUrl },
 ];
 
 const experiences = [
@@ -79,7 +79,7 @@ function Portfolio() {
           <p className="mt-4 max-w-md text-sm leading-6 text-muted-foreground">I turn raw data into actionable insights through analysis, visualization, and reporting.</p>
           <div className="mt-6 flex flex-wrap gap-3"><a href="#projects" className="bg-foreground px-5 py-3 text-xs font-bold uppercase text-background transition-colors hover:bg-primary">View My Projects</a><a href={RESUME_URL} target="_blank" rel="noreferrer" className="flex items-center gap-2 border border-foreground px-5 py-3 text-xs font-bold uppercase transition-colors hover:border-primary hover:text-primary">Download Resume <ArrowDownToLine size={15}/></a></div>
         </div>
-        <div className="order-1 relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden bg-paper-deep md:order-2"><img src={portrait.url} alt="Sowmya Paluttla, Data Analyst" className="relative h-full w-full object-cover object-[center_28%]"/><span className="absolute bottom-4 right-4 bg-background px-3 py-2 text-[9px] font-bold uppercase">Hyderabad, Telangana</span></div>
+        <div className="order-1 relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden bg-paper-deep md:order-2"><img src={portraitUrl} alt="Sowmya Paluttla, Data Analyst" className="relative h-full w-full object-cover object-[center_28%]"/><span className="absolute bottom-4 right-4 bg-background px-3 py-2 text-[9px] font-bold uppercase">Hyderabad, Telangana</span></div>
       </div>
     </section>
 
